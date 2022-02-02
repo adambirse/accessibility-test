@@ -17,3 +17,5 @@ https://github.com/adambirse/accessibility-test/commit/5f3a72965acd74018ce2030de
 ## Thanks
 
 https://ashleemboyer.com/blog/build-an-accessible-react-component-part-01
+
+https://www.digitalocean.com/community/tutorials/react-modal-component
