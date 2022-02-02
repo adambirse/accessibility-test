@@ -17,7 +17,7 @@ export const Breadcrumb: React.FC<Props> = ({links}) => {
     <nav className={styles.BreadcrumbContainer}>
     <ol>
       {links.map((link) => (
-        <li>
+        <li key={link.label}>
           <a href={link.href}>{link.label}</a>
         </li>
       ))}
