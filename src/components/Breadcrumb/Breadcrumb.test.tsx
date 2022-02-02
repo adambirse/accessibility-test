@@ -41,5 +41,14 @@ describe("Breadcrumb", () => {
     const wrapper = mount(<Breadcrumb links={links}></Breadcrumb>);
     expect(wrapper.find("a").first().text()).toBe("Link 1");
     expect(wrapper.find("a").first().props()["href"]).toBe("href 1");
+    expect(wrapper.find("a").first().props()["aria-current"]).toBeUndefined();
+
+  });
+  it("should render last element content.", function () {
+    const wrapper = mount(<Breadcrumb links={links}></Breadcrumb>);
+    expect(wrapper.find("a").last().text()).toBe("Link 3");
+    expect(wrapper.find("a").last().props()["href"]).toBe("href 3");
+    expect(wrapper.find("a").last().props()["aria-current"]).toBe("page");
+
   });
 });
