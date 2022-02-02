@@ -5,21 +5,21 @@ export default function Page() {
     <>
       <h1>Accessible components</h1>
       <Breadcrumb
-  links={[
-    {
-      label: 'Link 1',
-      href: '',
-    },
-    {
-      label: 'Link 2',
-      href: '',
-    },
-    {
-      label: 'Link 3',
-      href: '',
-    },
-  ]}
-/>
-      </>
+        links={[
+          {
+            label: "Link 1",
+            href: "",
+          },
+          {
+            label: "Link 2",
+            href: "",
+          },
+          {
+            label: "Link 3",
+            href: "",
+          },
+        ]}
+      />
+    </>
   );
 }

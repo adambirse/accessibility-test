@@ -6,15 +6,15 @@ import { Breadcrumb } from "./Breadcrumb";
 const links = [
   {
     label: "Link 1",
-    href: "",
+    href: "href 1",
   },
   {
     label: "Link 2",
-    href: "",
+    href: "href 2",
   },
   {
     label: "Link 3",
-    href: "",
+    href: "href 3",
   },
 ];
 
@@ -31,5 +31,15 @@ describe("Breadcrumb", () => {
   it("should render a nav element with aria-label", function () {
     const wrapper = mount(<Breadcrumb links={links}></Breadcrumb>);
     expect(wrapper.find("nav").props()["aria-label"]).toBe("Breadcrumb");
+  });
+
+  it("should render all anchor elements.", function () {
+    const wrapper = mount(<Breadcrumb links={links}></Breadcrumb>);
+    expect(wrapper.find("a")).toHaveLength(links.length);
+  });
+  it("should render anchor element content.", function () {
+    const wrapper = mount(<Breadcrumb links={links}></Breadcrumb>);
+    expect(wrapper.find("a").first().text()).toBe("Link 1");
+    expect(wrapper.find("a").first().props()["href"]).toBe("href 1");
   });
 });
