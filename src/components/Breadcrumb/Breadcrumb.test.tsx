@@ -27,4 +27,9 @@ describe("Breadcrumb", () => {
     const wrapper = mount(<Breadcrumb links={links}></Breadcrumb>);
     expect(wrapper.find("nav")).toHaveLength(1);
   });
+
+  it("should render a nav element with aria-label", function () {
+    const wrapper = mount(<Breadcrumb links={links}></Breadcrumb>);
+    expect(wrapper.find("nav").props()["aria-label"]).toBe("Breadcrumb");
+  });
 });
