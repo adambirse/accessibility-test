@@ -1,18 +1,8 @@
-# nextjs-bootstrap
+# Accessibility test
 
-A NextJS with typescript project, for bootstrapping more involved development. Includes:
+Experimenting with making accessible react components
 
-- Jest
-- Prettier
-- es lint
+## Thanks
 
-## To clone
 
-```
-cp -R nextjs-bootstrap REPOSITORY
-cd REPOSITORY
-git init
-git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
-git remote -v --to confirm new origin
-git push
-```
+https://ashleemboyer.com/blog/build-an-accessible-react-component-part-01
