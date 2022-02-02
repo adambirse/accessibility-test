@@ -2,6 +2,8 @@
 
 Experimenting with making accessible react components
 
+[wai-aria-practices-1.1](https://www.w3.org/TR/wai-aria-practices-1.1/)
+
 ## Setting up Jest with CSS modules
 
 Every time I setup a project I forget how to do this, and waste more time than I should.
