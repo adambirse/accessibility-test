@@ -51,7 +51,7 @@
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.6.2",
     "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.9.0",
+    "eslint-config-prettier": "^8.10.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "format-package": "^6.1.0",
     "husky": "^7.0.4",
@@ -62,7 +62,7 @@
     "lint-staged": "^11.2.6",
     "npm-run-all": "^4.1.5",
     "raf": "^3.4.1",
-    "sass": "^1.64.1",
+    "sass": "^1.64.2",
     "ts-jest": "^27.1.5"
   }
 }
